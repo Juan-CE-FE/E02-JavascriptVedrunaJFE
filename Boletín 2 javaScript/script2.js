@@ -37,5 +37,14 @@ eliminarButton.addEventListener("click", () => {
 
 //4.Cambiar el texto de un título (h1) cuando el ratón pase por encima.
 
+let titulo = document.querySelector("h1");
+titulo.addEventListener("mouseover", () => {
+    titulo.innerText = "El ratón está sobre el título";
+});
+titulo.addEventListener("mouseout", () => {
+    titulo.innerText = "Manipulando el DOM en javascript";
+});
+
+
 //5.Ocultar y mostrar un div con un botón.
 
