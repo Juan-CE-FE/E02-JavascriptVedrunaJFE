@@ -19,9 +19,21 @@ nuevoDiv.innerText = "Este es un div nuevo creado";
 eleccionDiv.appendChild(nuevoDiv);
 
 
-
-
 //3.Eliminar el último elemento de una lista con un botón.
+
+document.addEventListener('DOMContentLoaded', () => {
+let lista = document.querySelector(".lista");
+let eliminarButton = document.createElement("button");
+eliminarButton.innerText = "Eliminar último elemento";
+document.body.appendChild(eliminarButton);
+
+eliminarButton.addEventListener("click", () => {
+    lista.removeChild(lista.lastElementChild);
+});
+
+});
+
+
 
 //4.Cambiar el texto de un título (h1) cuando el ratón pase por encima.
 
