@@ -48,3 +48,20 @@ titulo.addEventListener("mouseout", () => {
 
 //5.Ocultar y mostrar un div con un botón.
 
+let ocultarDiv = document.querySelector(".main-div");
+let ocultarButton = document.createElement("button");
+ocultarButton.innerText = "Ocultar/Mostrar Div";
+document.body.appendChild(ocultarButton);
+let oculto = false;
+
+ocultarButton.addEventListener("click", () => { 
+    if(!oculto) {
+        ocultarDiv.style.display = "none";
+        oculto = true;
+    }
+    else {
+        ocultarDiv.style.display = "block";
+        oculto = false;
+    }
+});
+
