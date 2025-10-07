@@ -1,6 +1,7 @@
 
 
 //1.Cambiar el color de un párrafo al hacer clic en un botón.
+
 document.addEventListener('DOMContentLoaded', () => {
     let mainDiv = document.getElementById("title");
     let button = document.getElementById("button");
@@ -11,6 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //2.Crear un párrafo nuevo dentro de un div.
+
+let eleccionDiv = document.querySelector(".main-div");
+let nuevoDiv = document.createElement("p");
+nuevoDiv.innerText = "Este es un div nuevo creado";
+eleccionDiv.appendChild(nuevoDiv);
+
+
+
 
 //3.Eliminar el último elemento de una lista con un botón.
 
